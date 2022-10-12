@@ -1,0 +1,29 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(8, OUTPUT);    // sets digital pin 8 to output, which is pin 14 on the ATMega
+  pinMode(10, OUTPUT);  // pin 10 to output, pin 16 on ATMega
+  pinMode(9,OUTPUT);    // pin 9 to output, pin 15 on ATMega
+  pinMode(7, INPUT);  // sets digital pin 9 to input, which is pin 15 on the ATMega
+
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(digitalRead(7) == HIGH)
+    {
+      digitalWrite(8, HIGH); // set pin 15 high
+      delay(750); // delay 750ms
+      digitalWrite(8, LOW);  // set pin 15 low
+      delay(750); // delay 750ms
+      digitalWrite(10, HIGH); // set pin 15 high
+      delay(750); // delay 750ms
+      digitalWrite(10, LOW);  // set pin 15 low
+      delay(750); // delay 750ms
+      digitalWrite(9, HIGH); // set pin 15 high
+      delay(750); // delay 750ms
+      digitalWrite(9, LOW);  // set pin 15 low
+      delay(750); // delay 750ms
+      
+    }
+}
