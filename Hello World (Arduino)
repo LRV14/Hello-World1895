@@ -1,3 +1,5 @@
+//zach degore
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(8, OUTPUT);    // sets digital pin 8 to output, which is pin 14 on the ATMega
